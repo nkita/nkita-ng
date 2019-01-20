@@ -1,0 +1,8 @@
+button{
+    width:100%;
+    text-align:left;
+    margin-bottom: 10px;
+}
+button span{
+    padding-left:10px;
+}

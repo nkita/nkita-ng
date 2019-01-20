@@ -1,0 +1,15 @@
+.nkLayout{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.nkSide{
+    position:fixed;
+    top:68px;
+    display: flex;
+    height: 100%;
+    width:255px;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}

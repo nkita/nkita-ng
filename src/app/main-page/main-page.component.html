@@ -1,0 +1,34 @@
+<div class="main">
+  <!-- <mat-list>
+                <mat-list-item *ngFor="let data of data_list">
+                  <mat-icon matListIcon>folder</mat-icon>
+                  <h3 matLine> {{data.id}} </h3>
+                  <p matLine>
+                    <span> {{data.date}} </span>
+                    <span class="demo-2"> -- {{data.data.name}} </span>
+                  </p>
+                </mat-list-item>
+        </mat-list> -->
+
+  <mat-grid-list cols={{colsize}} rowHeight="100px">
+    <mat-grid-tile *ngFor="let data of data_list" [colspan]="1" [rowspan]="1" [style.background]="lightblue">
+      {{data.data.name}}/{{data.date}}/{{data.data}}
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let data of data_list">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{data.data.name}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{data.date}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <div style="width:100px;height:100px;background-color:red;">aa</div>説明をここに記載します。
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
