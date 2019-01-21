@@ -11,12 +11,12 @@
         </mat-list> -->
 
   <mat-grid-list cols={{colsize}} rowHeight="100px">
-    <mat-grid-tile *ngFor="let data of data_list" [colspan]="1" [rowspan]="1" [style.background]="lightblue">
-      {{data.data.name}}/{{data.date}}/{{data.data}}
+    <mat-grid-tile *ngFor="let data of data_list.records" [colspan]="1" [rowspan]="1" [style.background]="lightblue">
+      {{data.id}}
     </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-accordion>
+  <!-- <mat-accordion>
     <mat-expansion-panel *ngFor="let data of data_list">
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -31,4 +31,4 @@
       </div>
     </mat-expansion-panel>
   </mat-accordion>
-</div>
+</div> -->

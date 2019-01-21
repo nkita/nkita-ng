@@ -11,6 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { ErrorComponent } from './error/error.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const appRoutes: Routes = [ // 追加
   { path: '', component: MainPageComponent },
@@ -32,7 +34,8 @@ const appRoutes: Routes = [ // 追加
     AppRoutingModule,
     MaterialModules,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
